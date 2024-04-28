@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#chart-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr 1fr;
+    gap: 5px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+#input {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: -30px;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}

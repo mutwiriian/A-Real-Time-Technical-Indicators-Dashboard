@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/charts.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Ticker Charts</title>
+</head>
+<body>
+    <div id="chart-container">
+        <div id="input">
+            <h2>Binance Stock Tracker</h2>
+            <input type="text" name="symbol" id="symbol">
+            <button type="button" onclick="websocket_connect()">Start</button>
+        </div>
+
+        <div class="grid-item">
+            <canvas id="chart-one"></canvas>
+        </div>
+
+        <div class="grid-item">
+            <canvas id="chart-two"></canvas>
+        </div>
+        
+        <div class="grid-item">
+            <canvas id="chart-three"></canvas>
+        </div>
+
+        <div class="grid-item">
+            <canvas id="chart-four"></canvas>
+        </div>
+    </div>
+    <script src="../static/charts.js"></script>
+</body>
+</html>
