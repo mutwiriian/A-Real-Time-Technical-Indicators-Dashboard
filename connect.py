@@ -26,10 +26,9 @@ rsi = RSI(period=3)
 async def binance_connect(uri: str):   
     try:
         async with websockets.connect(uri=uri) as websocket:
-            while True:
-                message = await websocket.recv()
-                message = json.loads(message)
-                kline_data = message.get('k')
+            async for message in websocket:
+                data = json.loads(message)
+                kline_data = data.get('k')
                 ohlcv = OHLCV(
                     open= float(kline_data['o']),
                     high= float(kline_data['h']),
