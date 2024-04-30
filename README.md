@@ -1,7 +1,7 @@
 # A Real-Time Stock Data Streaming Application
-In financial settings like day-trading, one would need to make decisions swiftly
+In financial settings like day-trading, one would need to make decisions(trade) swiftly
 as markets change and new information becomes available. This app allows 
-a user to strean stock data from the Binance API and and compute selected
+a user to stream stock data from the Binance API and compute selected
 indicators in real time.
 
 ## Getting Started
