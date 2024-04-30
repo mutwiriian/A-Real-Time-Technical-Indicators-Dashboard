@@ -6,26 +6,34 @@ indicators in real time.
 
 ## Getting Started
 To explore and experiment with the web application on your computer follow
-the following instructions
+the following instructions.
 
 ## Create a virtual environment
 Ensure you have Python with `pip` installed
-`python3 -m venv .venv`
+```
+python3 -m venv .venv
+```
 
 ## Activate the virtual environment
-`source .venv/Scripts/activate`
+```
+source .venv/bin/activate
+```
 
 ## Install dependencies
 The required packages are in the **requirements.txt** file.
 Install all of them with:
-`pip install -r requirements.txt`
+```
+pip install -r requirements.txt
+```
 
 ## Run the application
 Execute the following command in the terminal:
-`python3 -m app`
+```
+python3 -m app
+```
 
 ## Interact with app
-On a browser, navigate to 127.0.0.1:8000/page
+On a browser, navigate to `127.0.0.1:8000/page`
 
 ## Start stream
 Enter your stock item like **BTCUSDT** and click **Start**
