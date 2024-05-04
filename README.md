@@ -4,6 +4,8 @@ as markets change and new information becomes available. This app allows a user
 to strean stock data from the Binance API and and view selected indicators
 calculated in real time.
 
+![Screenshot](./assets/ohlcv_screensshot.png)
+
 # Getting Started
 To explore and experiment with the web application on your computer follow
 the following instructions
