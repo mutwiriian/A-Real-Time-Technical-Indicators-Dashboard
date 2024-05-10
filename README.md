@@ -1,8 +1,8 @@
 # A Real-Time Stock Data Streaming Application
 In financial settings like day-trading, one would need to make decisions swiftly
-as markets change and new information becomes available. This app allows a user 
-to strean stock data from the Binance API and and view selected indicators
-calculated in real time.
+as markets change and new information becomes available. This web application 
+enables a user to stream stock data from the Binance API and view selected 
+indicators calculated in real time.
 
 ![Screenshot](./assets/ohlcv_screensshot.png)
 
