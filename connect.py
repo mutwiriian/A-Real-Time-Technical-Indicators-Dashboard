@@ -9,21 +9,21 @@ from collections import deque
 import json
 from datetime import datetime
 
-periods = 5
-
-actual = deque(maxlen=5)
-
-atr = ATR(period=periods)
-ema = EMA(period=periods)
-macd = MACD(
-    fast_period=3,
-    slow_period=5,
-    signal_period=5, 
-    # input_sampling= SamplingPeriodType.SEC_5
-    )
-rsi = RSI(period=3)
      
 async def binance_connect(uri: str):   
+    periods = 5
+
+    actual = deque(maxlen=5)
+
+    atr = ATR(period=periods)
+    ema = EMA(period=periods)
+    macd = MACD(
+        fast_period=3,
+        slow_period=5,
+        signal_period=5, 
+        # input_sampling= SamplingPeriodType.SEC_5
+        )
+    rsi = RSI(period=3)
     try:
         async with websockets.connect(uri=uri) as websocket:
             async for message in websocket:
