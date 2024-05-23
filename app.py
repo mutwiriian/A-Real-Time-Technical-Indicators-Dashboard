@@ -1,5 +1,3 @@
-import uvicorn
-
 from fastapi import FastAPI, Request, WebSocket
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
@@ -23,8 +21,5 @@ async def ws_connect(websocket: WebSocket, symbol: str):
    async for indicator_data in binance_connect(uri=uri):
        await websocket.send_json(indicator_data)
       
-
-if __name__ == '__main__':
-    uvicorn.run(app='app:app', reload=True, workers=2)
     
     
