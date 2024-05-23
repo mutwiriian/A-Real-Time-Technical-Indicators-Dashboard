@@ -13,19 +13,19 @@ To explore and experiment with the web application on your computer follow
 the following instructions
 
 # Create a virtual environment
-Ensure you have Python with `pip` installed
+Ensure you have Python with `pip` installed\
 `python3 -m venv .venv`
 
 # Activate the virtual environment
 `source .venv/Scripts/activate`
 
 # Install dependencies
-The required packages are in the **requirements.txt** file.
-Install all of them with:
+The required packages are in the **requirements.txt** file.\
+Install all of them with:\
 `pip install -r requirements.txt`
 
 # Run the application
-Execute the following command in the terminal to run the app in development mode:
+Execute the following command in the terminal to run the app in development mode:\
 `fastapi dev app.py`
 
 # Interact with app
